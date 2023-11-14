@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #bfd7e4;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 464px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #293241;
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+header img {
+  width: 225px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "Staatliches", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form {
+  background: #fff;
+  width: 750px;
+  margin: 0 auto;
+  padding: 30px 64px;
+}
+
+.first-legend {
+  background: #f67669;
+  color: #fff;
+  font-family: "Staatliches", sans-serif;
+  width: 750px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px 20px 0px 0px;
+  padding: 48px;
+}
+
+form legend {
+  color: #253b51;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  padding-top: 35px;
+  border-bottom: 1px solid #e6e6f0;
+  width: 622px;
+  padding-bottom: 8px;
+}
+
+fieldset .fisrt-label {
+  color: #4e4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: inline-flex;
+  gap: 22px;
+}
+
+form label {
+  color: #4e4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+form input,
+textarea,
+select {
+  color: #4e4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px;
+}
+
+form input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #253b51;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-wrapper-two {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-wrapper input,
+select,
+textarea {
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  height: 56px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.input-wrapper-two select {
+  margin-bottom: 32px;
+  width: 300px;
+}
+
+.input-wrapper-two textarea {
+  margin-bottom: 32px;
+  width: 100%;
+  height: 170px;
+  padding: 24px 24px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  gap: 16px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='17' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1.64984L5 5.61617L9 1.64984' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid #253b51;
+}
+
+fieldset .col-3 {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+fieldset .col-3 > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+fieldset .col-3 input {
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  height: 56px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+footer {
+  background: #293241;
+  width: 750px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+footer button {
+  height: 56px;
+  background: #f67669;
+  color: #fff;
+  border: none;
+  border-radius: 0px 0px 8px 8px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background: #f67669;
+  opacity: 0.8;
+}
